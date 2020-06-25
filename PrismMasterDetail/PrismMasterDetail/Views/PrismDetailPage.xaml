@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PrismMasterDetail.Views.PrismDetailPage"
+             Title="Customer Details">
+    <StackLayout>
+        <ScrollView MinimumWidthRequest="400">
+            <Grid MinimumWidthRequest="400">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Expander Grid.Row="0" Grid.ColumnSpan="2"  IsExpanded="True" MinimumWidthRequest="400" MinimumHeightRequest="20">
+                    <Expander.Header >
+                        <Label Text="CUSTOMER" HorizontalOptions="Fill" BackgroundColor="Orange" Margin="10,20,10, 10"/>
+                    </Expander.Header>
+                    <Grid Margin="10,5,10,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="ID" Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="{Binding ID}" Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="FIRSTNAME" Grid.Row="1" Grid.Column="0"/>
+                        <Label Text="{Binding Firstname}" Grid.Row="1" Grid.Column="1"/>
+                        <Label Text="LASTNAME" Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="{Binding Lastname}" Grid.Row="2" Grid.Column="1"/>
+                        <Label Text="GENDER" Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="{Binding Gender}" Grid.Row="3" Grid.Column="1"/>
+                        <Label Text="EMAIL" Grid.Row="4" Grid.Column="0"/>
+                        <Label Text="{Binding Email}" Grid.Row="4" Grid.Column="1"/>
+                        <Label Text="SALARY" Grid.Row="5" Grid.Column="0"/>
+                        <Label Text="{Binding Salary}" Grid.Row="5" Grid.Column="1"/>
+                    </Grid>
+                </Expander>
+                <Expander Grid.Row="1" Grid.ColumnSpan="2"  IsExpanded="False" MinimumWidthRequest="400" MinimumHeightRequest="20">
+                    <Expander.Header>
+                        <Label Text="ADDRESS" HorizontalOptions="Fill" BackgroundColor="Orange" Margin="10,20,10, 10"/>
+                    </Expander.Header>
+                    <Grid Margin="10,5,10,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="COUNTRY" Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="{Binding Country}" Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="POSTALCODE" Grid.Row="1" Grid.Column="0"/>
+                        <Label Text="{Binding Postalcode}" Grid.Row="1" Grid.Column="1"/>
+                        <Label Text="CITY" Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="{Binding City}" Grid.Row="2" Grid.Column="1"/>
+                        <Label Text="STREET" Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="{Binding Street}" Grid.Row="3" Grid.Column="1"/>
+                       
+                    </Grid>
+                </Expander>
+                <Expander Grid.Row="2" Grid.ColumnSpan="2"  IsExpanded="False"  MinimumWidthRequest="400" MinimumHeightRequest="20">
+                    <Expander.Header HorizontalOptions="Fill">
+                        <Label Text="PURCHASE" BackgroundColor="Orange" Margin="10,20,10, 10"/>
+                    </Expander.Header>
+                    <ListView ItemsSource="{Binding Products}" Margin="10,0,10,5">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding id}"/>
+                                        <Label Text="{Binding order_date}"/>
+                                        <Label Text="{Binding product}"/>
+                                        <Label Text="{Binding quantity}"/>
+                                        <Label Text="{Binding price}"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Expander>
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,14 @@
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\bin\Debug\netstandard2.0\PrismMasterDetail.deps.json
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\bin\Debug\netstandard2.0\PrismMasterDetail.dll
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\bin\Debug\netstandard2.0\PrismMasterDetail.pdb
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.csprojAssemblyReference.cache
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\Views\PrismDetailPage.xaml.g.cs
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\Views\PrismMasterDetailPage.xaml.g.cs
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.AssemblyInfoInputs.cache
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.AssemblyInfo.cs
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.csproj.CoreCompileInputs.cache
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.dll
+C:\Users\ws\source\repos\PrismMasterDetail\PrismMasterDetail\PrismMasterDetail\obj\Debug\netstandard2.0\PrismMasterDetail.pdb
